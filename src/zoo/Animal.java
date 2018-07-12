@@ -1,3 +1,5 @@
+package zoo;
+
 public class Animal {
 	protected int isThisKing = 0;
 	protected int satiety = 0;

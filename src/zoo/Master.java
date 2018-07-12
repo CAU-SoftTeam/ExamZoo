@@ -1,3 +1,5 @@
+package zoo;
+
 public class Master {
 	
 	void tigerFeed(Tiger t){

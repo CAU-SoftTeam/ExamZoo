@@ -1,2 +1,0 @@
-class Tiger extends Animal{
-}
