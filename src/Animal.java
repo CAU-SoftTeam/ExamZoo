@@ -11,57 +11,68 @@ public class Animal {
 	}
 	public void eat() {
 		if(isDie == true) {
-			System.out.println("±× µ¿¹°Àº Á×¾ú½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			return;
 		}
-		System.out.println("¹«¾ð°¡¸¦ ¸Ô¾ú½À´Ï´Ù.~");
+		System.out.println("ï¿½ï¿½ï¿½ð°¡¸ï¿½ ï¿½Ô¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.~");
 		this.satiety += 1;
 	}
-	public void sleep() {
+
+	public void eat(Rabbit r) {
 		if(isDie == true) {
-			System.out.println("±× µ¿¹°Àº Á×¾ú½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			return;
 		}
-		System.out.println("ÀáÀ» Àâ´Ï´Ù~");
+		r.isDie = false;
+		System.out.println("ï¿½ï¿½ï¿½ð°¡¸ï¿½ ï¿½Ô¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.~");
+		this.satiety += 1;
+	}
+
+	public void sleep() {
+		if(isDie == true) {
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
+			return;
+		}
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ï´ï¿½~");
 		this.satiety -= 1;
 	}
 	public void shit() {
 		if(isDie == true) {
-			System.out.println("±× µ¿¹°Àº Á×¾ú½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			return;
 		}
-		System.out.println("X¸¦ ½Ô´Ï´Ù~");
+		System.out.println("Xï¿½ï¿½ ï¿½Ô´Ï´ï¿½~");
 	}
 	public void fight(Tiger t) {
 		if(isDie == true) {
-			System.out.println("±× µ¿¹°Àº Á×¾ú½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			return;
 		}
-		System.out.println("È£¶ûÀÌ¿Í ½Î¿ö¼­ È£¶ûÀÌ°¡ Á×¾ú½À´Ï´Ù.");
+		System.out.println("È£ï¿½ï¿½ï¿½Ì¿ï¿½ ï¿½Î¿ï¿½ï¿½ï¿½ È£ï¿½ï¿½ï¿½Ì°ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		t.die();
 	}
 	public void fight(Lion l) {
 		if(isDie == true) {
-			System.out.println("±× µ¿¹°Àº Á×¾ú½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			return;
 		}
-		System.out.println("»çÀÚ¿Í ½Î¿ö¼­ »çÀÚ°¡ Á×¾ú½À´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½Î¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		l.die();
 	}
 	public void fight(Rabbit t) {
 		if(isDie == true) {
-			System.out.println("±× µ¿¹°Àº Á×¾ú½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			return;
 		}
-		System.out.println("Åä³¢¿Í ½Î¿ö¼­ Åä³¢°¡ Á×¾ú½À´Ï´Ù.");
+		System.out.println("ï¿½ä³¢ï¿½ï¿½ ï¿½Î¿ï¿½ï¿½ï¿½ ï¿½ä³¢ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		t.die();
 	}
 	public void die() {
 		if(isDie == true) {
-			System.out.println("±× µ¿¹°Àº Á×¾ú½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			return;
 		}
-		System.out.println("Á×¾ú½À´Ï´Ù.");
+		System.out.println("ï¿½×¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		isDie = true;
 	}
 }
