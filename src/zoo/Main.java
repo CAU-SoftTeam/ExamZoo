@@ -1,5 +1,5 @@
 package zoo;
-public class Zoo {
+public class Main {
 
 
     
